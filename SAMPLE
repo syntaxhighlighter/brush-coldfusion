@@ -1,0 +1,14 @@
+<!--- temperature.cfc --->
+<cfcomponent>
+  <cffunction name="FtoC" access="public" returntype="numeric">
+    <cfargument name="fahrenheit" required="yes" type="numeric" />
+    <cfset answer= (fahrenheit - 32)*100/180 />
+    <cfreturn answer />
+  </cffunction>
+</cfcomponent>
+<!--- test.cfm --->
+<cfset fDegrees = 212 />
+<cfinvoke component="temperature" method="FtoC" returnvariable="result">
+  <cfinvokeargument name="fahrenheit" value="#fDegrees#" />
+</cfinvoke>
+<cfoutput>#fDegrees#&deg;F = #result#&deg;C</cfoutput> <br />
