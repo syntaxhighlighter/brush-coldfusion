@@ -1,5 +1,5 @@
 {
-  "name": "brush-coldfusion",
+  "name": "@alexgorbatchev/brush-coldfusion",
   "version": "4.0.0",
   "description": "coldfusion brush module for SyntaxHighlighter.",
   "keywords": [
