@@ -2,11 +2,11 @@
 
 ColdFusion brush module for [SyntaxHighlighter](https://github.com/syntaxhighlighter).
 
-[![Build Status](https://travis-ci.org/alexgorbatchev/brush-coldfusion.svg)](https://travis-ci.org/alexgorbatchev/brush-coldfusion)
+[![Build Status](https://travis-ci.org/syntaxhighlighter/brush-coldfusion.svg)](https://travis-ci.org/syntaxhighlighter/brush-coldfusion)
 
 ## Installation
 
-    npm install syntaxhighlighter/brush-coldfusion
+    npm install @alexgorbatchev/brush-coldfusion
 
 ## Testing
 
