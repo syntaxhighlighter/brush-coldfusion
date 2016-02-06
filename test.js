@@ -1,6 +1,6 @@
 var chai = require('chai');
 var expect = chai.expect;
-var parser = require('parser');
+var match = require('syntaxhighlighter-match');
 var Brush = require('./brush');
 var sample = require('fs').readFileSync('./sample.txt', 'utf8');
 
@@ -25,7 +25,7 @@ describe('brush-coldfusion', function() {
     var matches = null;
 
     before(function() {
-      return matches = parser.parse(sample, instance.regexList);
+      return matches = match.applyRegexList(sample, instance.regexList);
     });
 
     return it('can parse', function() {
